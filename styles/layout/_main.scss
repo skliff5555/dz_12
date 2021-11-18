@@ -4,14 +4,7 @@
     padding-top: 9.58vw;
     padding-bottom: 6.78vw;
     // outline: 1px solid blue;
-    border-top: 2px solid $border-color;
-    
-}
-
- h2 {
-    font-size: 1.95rem;
-    font-weight: 600;
-    letter-spacing: .045ex;
+    border-top: 2px solid $border-color;   
 }
 
 .center {
@@ -58,7 +51,6 @@
     padding-right: 1.55vw;
     padding-bottom: 4.7vw;
 }
-
 
 .main__filling {
     @include column_center;
