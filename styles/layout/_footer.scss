@@ -1,0 +1,7 @@
+.footer {
+    @include column_center;
+}
+
+.footer__links {
+    @include row_center;
+}
