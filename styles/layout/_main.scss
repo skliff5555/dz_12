@@ -77,6 +77,9 @@
     background-color: $accent-color;
 }
 
+.main__top {
+    margin-top: 4.6vw;
+}
 .main__filling-item {
     font-size: 1.37rem;
     margin-top: 3vw;
@@ -86,4 +89,12 @@
     margin-top: 1.75vw;
     padding-bottom: 3.42vw;
     border-bottom: 3px solid $border-color;
+}
+
+.main__filling-darker {
+    padding-bottom: 1.29vw;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .045ex;
+    color: $text-color-dark;
 }

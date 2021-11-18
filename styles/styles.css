@@ -72,6 +72,10 @@ p {
   color: #8b8989;
 }
 
+h2, h3 {
+  color: #3f3f3f;
+}
+
 .delete {
   width: 1909px;
   outline: 1px solid red;
@@ -279,6 +283,10 @@ h2 {
   background-color: #df6267;
 }
 
+.main__top {
+  margin-top: 4.6vw;
+}
+
 .main__filling-item {
   font-size: 1.37rem;
   margin-top: 3vw;
@@ -288,5 +296,13 @@ h2 {
   margin-top: 1.75vw;
   padding-bottom: 3.42vw;
   border-bottom: 3px solid #d2d2d2;
+}
+
+.main__filling-darker {
+  padding-bottom: 1.29vw;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .045ex;
+  color: #000;
 }
 /*# sourceMappingURL=styles.css.map */

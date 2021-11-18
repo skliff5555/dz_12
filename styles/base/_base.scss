@@ -5,6 +5,9 @@ p {
     color: $text-color;
 }
 
+h2,h3 {
+    color: $text-color-light;
+}
 .delete {
     width: 1909px;
     outline: 1px solid red;
