@@ -318,8 +318,16 @@ a.head__link:active, a.head__link {
 }
 
 .main__present-name {
+  padding: 1.4vw 53.1vw 4.9vw 0vw;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 2rem;
+  font-size: 1.95rem;
   font-weight: 600;
+  letter-spacing: .6px;
+}
+
+.main__present-item {
+  padding: 1.6vw .2vw 4.9vw 0vw;
+  font-size: 1.44rem;
+  letter-spacing: -.3px;
 }
 /*# sourceMappingURL=styles.css.map */
