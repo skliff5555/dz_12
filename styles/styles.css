@@ -107,10 +107,16 @@ h2 {
     font-size: 0.8rem;
   }
   .main__filling-button .main__filling-link {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
-  .main__introduction {
+  .main__introduction, .main__filling-item {
     text-align: center;
+  }
+  .footer__links .footer__links-item {
+    font-size: 0.95rem;
+  }
+  .head__menu-item a {
+    font-size: 1rem;
   }
 }
 

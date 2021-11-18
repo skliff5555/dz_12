@@ -47,11 +47,19 @@ h2 {
     }
 
     .main__filling-button .main__filling-link {
-        font-size: $text-size*.9;
+        font-size: $text-size*.75;
     }
 
-    .main__introduction {
+    .main__introduction, .main__filling-item {
         text-align: center;
+    }
+
+    .footer__links .footer__links-item {
+        font-size: $text-size*.95;
+    }
+
+    .head__menu-item a {
+        font-size: $text-size*1;
     }
 }
 
@@ -80,6 +88,8 @@ h2 {
     .footer .footer__signature p {
         font-size: $text-size*1.1;
     }
+
+    
 
     .main__filling-button .main__filling-link {
         font-size: $text-size*1.2;
