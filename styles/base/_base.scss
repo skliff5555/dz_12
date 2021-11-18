@@ -10,9 +10,13 @@ p {
 
 .wrapper {
     width: 78.6%;
-    margin: 0 auto;
+    margin: 0 10.47vw 0 11vw;
     outline: 1px solid gray;
 
+}
+
+.head {
+    margin-left: 1.87vw;
 }
 
 .head__menu-link {
@@ -23,7 +27,7 @@ p {
     @include menu_padding;
     border-radius:0 0 0.26vw 0.26vw;
     @include Arial;
-    font-size: 1.2rem;
+    font-size: 1.22rem;
 }
 
 a.head__link:active, a.head__link {
@@ -53,7 +57,9 @@ a.head__link:active, a.head__link {
 
 .head__logo {
     @include column_center;
-    margin-top: 10vw;
+    margin-top: 10.2vw;
+    margin-left: .4vw;
+    margin-bottom: 8.2vw;
 }
 
 .head__logo-img {
@@ -62,6 +68,13 @@ a.head__link:active, a.head__link {
     background-image: url(../../images/logo.png);
     background-size: cover;
     border-radius: 50%;
+}
 
+.head__logo-title {
+    margin-top: 4.1vw;
+    text-transform: uppercase;
+    @include Arial;
+    font-size: 3.29rem;
+    font-weight: 600;
 }
 
