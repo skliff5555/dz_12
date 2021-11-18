@@ -326,8 +326,14 @@ a.head__link:active, a.head__link {
 }
 
 .main__present-item {
-  padding: 1.6vw .2vw 4.9vw 0vw;
+  padding: 1.6vw .2vw 4.9vw 0;
   font-size: 1.44rem;
   letter-spacing: -.3px;
+}
+
+.gallery {
+  width: 25.55vw;
+  padding-right: 1.55vw;
+  padding-bottom: 4.7vw;
 }
 /*# sourceMappingURL=styles.css.map */
