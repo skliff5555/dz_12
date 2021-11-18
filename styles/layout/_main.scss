@@ -59,13 +59,6 @@
     padding-bottom: 4.7vw;
 }
 
-.gallery:hover {
-    transform: scale(2);
-    transition: 1s;
-    margin: auto auto;
-    z-index: 2;
-
-}
 
 .main__filling {
     @include column_center;
@@ -90,10 +83,10 @@ a.main__filling-link:active, a.main__filling-link {
     color: $text-color-none;
 }
 
-// .main__filling-button:hover {
-//     transform: scale(1.01);
-//     z-index: 2;
-// }
+.main__filling-button:hover {
+    transform: scale(1.01);
+    z-index: 2;
+}
 
 .main__top {
     margin-top: 4.6vw;
@@ -104,7 +97,7 @@ a.main__filling-link:active, a.main__filling-link {
 }
 
 .main__filling-text {
-    margin-top: 1.75vw;
+    margin-top: 1.76vw;
     padding-bottom: 3.42vw;
     border-bottom: 3px solid $border-color;
 }
