@@ -5,3 +5,18 @@
 .footer__links {
     @include row_center;
 }
+
+.footer__links-item {
+    padding: 4.71vw 2.8vw 4.1vw;
+    font-size: 1.22rem;
+}
+
+.alignment {
+    padding-left: 5.3vw;
+}
+
+.footer__signature p {
+    font-size: 1.24rem;
+    color: $text-color-dark;
+    padding-bottom: 4vw;
+}

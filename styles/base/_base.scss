@@ -8,14 +8,19 @@ p {
 h2,h3,h4 {
     color: $text-color-light;
 }
-.delete {
-    width: 1909px;
-    outline: 1px solid red;
+
+h5 {
+    color: $text-h5-color;
 }
+
+// .delete {
+//     width: 1909px;
+//     outline: 1px solid red;
+// }
 
 .wrapper {
     width: 78.6%;
-    margin: 0 10.5vw 0 10.92vw;
-    outline: 1px solid gray;
+    margin: 0 10.34vw 0 11.05vw;
+    // outline: 1px solid gray;
 
 }

@@ -76,15 +76,13 @@ h2, h3, h4 {
   color: #3f3f3f;
 }
 
-.delete {
-  width: 1909px;
-  outline: 1px solid red;
+h5 {
+  color: #8b7d6b;
 }
 
 .wrapper {
   width: 78.6%;
-  margin: 0 10.5vw 0 10.92vw;
-  outline: 1px solid gray;
+  margin: 0 10.34vw 0 11.05vw;
 }
 
 .head__menu-link {
@@ -155,14 +153,13 @@ a.head__link:active, a.head__link {
 .head__logo-img {
   width: 10.48vw;
   height: 10.48vw;
-  background-image: url(../../images/logo.png);
-  background-size: cover;
   border-radius: 50%;
 }
 
 .head__logo-title {
-  margin-top: 4.0vw;
+  margin-top: 3.85vw;
   text-transform: uppercase;
+  text-align: center;
   font-size: 3.3rem;
   font-weight: 700;
 }
@@ -180,7 +177,6 @@ a.head__link:active, a.head__link {
           align-items: center;
   padding-top: 9.58vw;
   padding-bottom: 6.78vw;
-  outline: 1px solid blue;
   border-top: 2px solid #d2d2d2;
 }
 
@@ -246,6 +242,16 @@ h2 {
   width: 25.55vw;
   padding-right: 1.55vw;
   padding-bottom: 4.7vw;
+}
+
+.gallery:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  margin: auto auto;
+  z-index: 2;
 }
 
 .main__filling {
@@ -331,5 +337,20 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer__links-item {
+  padding: 4.71vw 2.8vw 4.1vw;
+  font-size: 1.22rem;
+}
+
+.alignment {
+  padding-left: 5.3vw;
+}
+
+.footer__signature p {
+  font-size: 1.24rem;
+  color: #000;
+  padding-bottom: 4vw;
 }
 /*# sourceMappingURL=styles.css.map */
