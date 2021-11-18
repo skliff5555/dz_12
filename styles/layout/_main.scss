@@ -1,0 +1,43 @@
+
+.main__introduction {
+    @include column_center;
+    padding-top: 9.58vw;
+    padding-bottom: 6.78vw;
+    outline: 1px solid blue;
+    border-top: 2px solid $border-color;
+    
+}
+
+.main__introduction h2 {
+    font-size: 1.95rem;
+    font-weight: 600;
+    letter-spacing: .045ex;
+}
+
+.center {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.main__introduction-text {
+    margin-top: 2.5vw;
+}
+
+.present {
+    border-top: 2px solid $border-color ;
+}
+
+.main__present {
+    @include column_center;
+}
+
+.main__present-text {
+    @include row_space-between;
+}
+
+.main__present-name {
+    @include New_roman;
+    font-size: 2rem;
+    font-weight: 600;
+}

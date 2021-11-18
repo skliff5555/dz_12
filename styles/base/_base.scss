@@ -55,7 +55,7 @@ a.head__link:active, a.head__link {
 .head__logo {
     @include column_center;
     margin-top: 10.2vw;
-    margin-bottom: 8.2vw;
+    margin-bottom: 8.17vw;
 }
 
 .head__logo-img {
@@ -73,5 +73,9 @@ a.head__link:active, a.head__link {
     font-weight: 700;
 }
 
-
+.main__introduction {
+    @include column_center;
+    outline: 1px solid blue;
+    border-top: 2px solid $border-color;
+}
 

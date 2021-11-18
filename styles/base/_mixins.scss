@@ -9,9 +9,20 @@
     align-items: center;
 }
 
+@mixin column_start {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
 @mixin row_center {
     display: flex;
     justify-content: center;
+}
+
+@mixin row_space-between {
+    display: flex;
+    justify-content: space-between;
 }
 
 @mixin Arial {
