@@ -249,7 +249,6 @@ h2 {
           transform: scale(2);
   -webkit-transition: 1s;
   transition: 1s;
-  position: absolute;
   margin: auto auto;
   z-index: 2;
 }
@@ -287,6 +286,17 @@ h2 {
   font-weight: 600;
   color: #fff;
   background-color: #df6267;
+}
+
+a.main__filling-link:active, a.main__filling-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main__filling-button:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  z-index: 2;
 }
 
 .main__top {
