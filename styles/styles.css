@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,16 +64,92 @@ a {
           box-sizing: border-box;
 }
 
-html {
-  font-size: 1rem;
+p {
+  color: #8b8989;
 }
 
-body {
-  color: #8b8989;
+.delete {
+  width: 1909px;
+  outline: 1px solid red;
 }
 
 .wrapper {
   width: 78.6%;
   margin: 0 auto;
+  outline: 1px solid gray;
+}
+
+.head__menu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.head__menu-item {
+  padding: 1.45vw 1.52vw 1.4vw;
+  border-radius: 0 0 0.26vw 0.26vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+a.head__link:active, a.head__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.head__menu-item:first-child {
+  padding: 1.45vw 2.67vw 1.4vw;
+  margin-right: 1.47vw;
+  margin-left: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.head__menu-item:hover {
+  background-color: #3f3f3f;
+  /* шапка меню меняет цвет фона при наведении курсора */
+}
+
+.head__menu-item:hover > a.head__link {
+  /* меняем цвет текста ссылки при наведении. Эта строка сгорит в аду за все мучения */
+  color: #fff;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10vw;
+}
+
+.head__logo-img {
+  width: 10.48vw;
+  height: 10.48vw;
+  background-image: url(../../images/logo.png);
+  background-size: cover;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=styles.css.map */
