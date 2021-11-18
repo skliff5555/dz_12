@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siteleaf</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+        integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -35,7 +38,7 @@
                 </ul>
             </div>
             <div class="head__logo">
-                <div >
+                <div>
                     <img class="head__logo-img" src="images/logo.png" alt="logo">
                 </div>
                 <div class="head__logo-title">
@@ -72,21 +75,33 @@
                     </div>
                 </div>
                 <div class="main__present-gallery">
-                    <img class="gallery" src="./images/flover.png" alt="flover">
-                    <img class="gallery" src="./images/humans.png" alt="humans">
-                    <img class="gallery" src="./images/tomato.png" alt="tomatoes">
+                    <a href="./images/flover_big.png" data-lightbox="main__present-gallery" data-title="flover">
+                        <img src="./images/flover.png" alt="flover">
+                    </a>
+                    <a href="./images/humans_big.png" data-lightbox="main__present-gallery" data-title="humans">
+                        <img src="./images/humans.png" alt="humans">
+                    </a>
+                    <a href="./images/tomato_big.png" data-lightbox="main__present-gallery" data-title="tomato">
+                        <img src="./images/tomato.png" alt="tomato">
+                    </a>
                 </div>
                 <div class="main__present-gallery">
-                    <img class="gallery" src="./images/nigga.png" alt="portrait">
-                    <img class="gallery" src="./images/idols.png" alt="statues">
-                    <img class="gallery" src="./images/city.png" alt="city">
+                    <a href="./images/nigga_big.png" data-lightbox="main__present-gallery" data-title="nigga">
+                        <img src="./images/nigga.png" alt="flover">
+                    </a>
+                    <a href="./images/idols_big.png" data-lightbox="main__present-gallery" data-title="idols">
+                        <img src="./images/idols.png" alt="humans">
+                    </a>
+                    <a href="./images/city_big.png" data-lightbox="main__present-gallery" data-title="city">
+                        <img src="./images/city.png" alt="city">
+                    </a>
                 </div>
             </div>
             <div class="main__filling">
                 <div class="main__filling-button">
-                     <a href="#" class="main__filling-link">
-                         Full Portfolio
-                     </a>
+                    <a href="#" class="main__filling-link">
+                        Full Portfolio
+                    </a>
                 </div>
                 <div class="main__filling-name">
                     <h2>
@@ -108,7 +123,7 @@
             </div>
             <div class="main__filling">
                 <div class="main__filling-button main__top">
-                    <a href="#" class="main__filling-link">
+                    <a class="main__filling-link" href="#">
                         Learn More
                     </a>
                 </div>
@@ -184,6 +199,9 @@
                 </p>
             </div>
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js"
+            integrity="sha512-0rYcJjaqTGk43zviBim8AEjb8cjUKxwxCqo28py38JFKKBd35yPfNWmwoBLTYORC9j/COqldDc9/d1B7dhRYmg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </div>
 </body>
 
