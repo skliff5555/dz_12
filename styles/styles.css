@@ -64,6 +64,10 @@ a {
           box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 p {
   color: #8b8989;
 }
@@ -75,12 +79,8 @@ p {
 
 .wrapper {
   width: 78.6%;
-  margin: 0 10.47vw 0 11vw;
+  margin: 0 10.5vw 0 10.92vw;
   outline: 1px solid gray;
-}
-
-.head {
-  margin-left: 1.87vw;
 }
 
 .head__menu-link {
@@ -93,9 +93,8 @@ p {
 }
 
 .head__menu-item {
-  padding: 1.18vw 1.52vw 1.4vw;
+  padding: 1.4vw 1.48vw 1.4vw;
   border-radius: 0 0 0.26vw 0.26vw;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.22rem;
 }
 
@@ -105,11 +104,10 @@ a.head__link:active, a.head__link {
 }
 
 .head__menu-item:first-child {
-  padding: 1.18vw 2.67vw 1.4vw;
+  padding: 1.4vw 2.67vw 1.4vw;
   margin-right: 1.47vw;
-  margin-left: 2vw;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  margin-left: 1.45vw;
+  font-size: 1.22rem;
 }
 
 .head__menu-item:hover {
@@ -147,7 +145,6 @@ a.head__link:active, a.head__link {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10.2vw;
-  margin-left: .4vw;
   margin-bottom: 8.2vw;
 }
 
@@ -160,10 +157,9 @@ a.head__link:active, a.head__link {
 }
 
 .head__logo-title {
-  margin-top: 4.1vw;
+  margin-top: 4.0vw;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.29rem;
-  font-weight: 600;
+  font-size: 3.3rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=styles.css.map */

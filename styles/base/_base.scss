@@ -1,4 +1,6 @@
-
+body {
+    @include Arial;
+}
 p {  
     color: $text-color;
 }
@@ -10,14 +12,11 @@ p {
 
 .wrapper {
     width: 78.6%;
-    margin: 0 10.47vw 0 11vw;
+    margin: 0 10.5vw 0 10.92vw;
     outline: 1px solid gray;
 
 }
 
-.head {
-    margin-left: 1.87vw;
-}
 
 .head__menu-link {
     @include row_center;
@@ -26,7 +25,6 @@ p {
 .head__menu-item {
     @include menu_padding;
     border-radius:0 0 0.26vw 0.26vw;
-    @include Arial;
     font-size: 1.22rem;
 }
 
@@ -38,9 +36,8 @@ a.head__link:active, a.head__link {
 .head__menu-item:first-child {
     @include first_menu_padding;
     margin-right: 1.47vw;
-    margin-left: 2vw;
-    @include Arial;
-    font-size: 1.2rem;
+    margin-left: 1.45vw;
+    font-size: 1.22rem;
 }
 
 .head__menu-item:hover {
@@ -58,7 +55,6 @@ a.head__link:active, a.head__link {
 .head__logo {
     @include column_center;
     margin-top: 10.2vw;
-    margin-left: .4vw;
     margin-bottom: 8.2vw;
 }
 
@@ -71,10 +67,11 @@ a.head__link:active, a.head__link {
 }
 
 .head__logo-title {
-    margin-top: 4.1vw;
+    margin-top: 4.0vw;
     text-transform: uppercase;
-    @include Arial;
-    font-size: 3.29rem;
-    font-weight: 600;
+    font-size: 3.3rem;
+    font-weight: 700;
 }
+
+
 
