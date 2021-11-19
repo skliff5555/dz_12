@@ -1,66 +1,62 @@
 
-.main__introduction {
+.main__introduction {  /* спозиционировал текст в верхушке мейна, нарисовал снизу линию */
     @include column_center;
     padding-top: 9.58vw;
     padding-bottom: 6.78vw;
-    // outline: 1px solid blue;
     border-top: 2px solid $border-color;   
 }
 
-.center {
+.center {  /* дополнительно ровнял текст для адаптива */
     text-align: center;
     font-size: 1.4rem;
     line-height: 2;
     word-spacing: -1.1px;
 }
 
-.main__introduction-text {
+.main__introduction-text {  /* выставил текст на место */
     margin-top: 2.5vw;
 }
 
-.present {
-    border-top: 2px solid $border-color ;
-}
 
-.main__present {
+.main__present {  /* выставил галлерею всю, нарисовал линию */
+    border-top: 2px solid $border-color ;
     @include column_center;
     padding-bottom: 2.28vw;
 }
 
-.main__present-text {
+.main__present-text {  /* выставлят подписи над галлереей */
     @include row_space-between;
 }
 
-.main__present-name {
-    padding: 1.4vw 53.1vw 4.9vw 0vw;
+.main__present-name {  /* надпись наши работы - все размеры и шрифт выставил */
+    padding: 1.32vw 52.8vw 4.8vw 0vw;
     @include New_roman;
     font-size: 1.95rem;
     font-weight: 600;
     letter-spacing: .6px;
 }
 
-.main__present-item {
-    padding: 1.6vw .2vw 4.9vw 0;
-
+.main__present-item {  /* так же надпись над галлереей - ее шрифт и позиция  */
+    padding: 1.5vw 0 4.9vw 0;
     font-size: 1.44rem;
-    letter-spacing: -.3px;
+    letter-spacing: -.2px;
 }
 
-.gallery {
+.gallery {  /* размеры изображений и их взаиморасположение */
     width: 25.55vw;
-    padding-right: 1.55vw;
+    padding-right: 1.6vw;
     padding-bottom: 4.7vw;
 }
 
-.main__filling {
+.main__filling {  /* расположил блоки с текстами под галлереей вертикально */
     @include column_center;
 }
 
-.main__filling-button {
+.main__filling-button {  /* сделал книпки - их вид, расположение и шрифты надписи */
     @include center_center;
     width: 19.38vw;
     height: 4.45vw;
-    margin-bottom: 1.45vw;
+    margin-bottom: 1.32vw;
     border-radius: .4vw;
     border-color: $accent-color;
     @include New_roman;
@@ -70,31 +66,35 @@
     background-color: $accent-color;
 }
 
-a.main__filling-link:active, a.main__filling-link {
+.margin {  /* класс для точного позиционирования первой кнопки */
+    margin-top: .18vw;
+}
+
+a.main__filling-link:active, a.main__filling-link {  /* убрал аттрибуты ссылок в кнопках, назначил цвет */
     text-decoration: none;
     color: $text-color-none;
 }
 
-.main__filling-button:hover {
+.main__filling-button:hover {  /* сделал кнопку чуть живее */
     transform: scale(1.01);
     z-index: 2;
 }
 
-.main__top {
+.main__top {  /* корректировал положение второй кнопки */
     margin-top: 4.6vw;
 }
-.main__filling-item {
+.main__filling-item {  /* размеры шрифта и позиция подзаголовка */
     font-size: 1.37rem;
-    margin-top: 3vw;
+    margin-top: 2.9vw;
 }
 
-.main__filling-text {
-    margin-top: 1.76vw;
+.main__filling-text {  /* спозиционировал блоки с текстом */
+    margin-top: 1.72vw;
     padding-bottom: 3.42vw;
     border-bottom: 3px solid $border-color;
 }
 
-.main__filling-darker {
+.main__filling-darker {  /* заголовок третьего блока - выставлял его и задавал параметры */
     padding-bottom: 1.29vw;
     font-size: 1.8rem;
     font-weight: 600;
@@ -102,7 +102,7 @@ a.main__filling-link:active, a.main__filling-link {
     color: $text-color-dark;
 }
 
-.bottom {
+.bottom {  /* рисовал линию снизу мейна, и отодвигал ее от блока */
     padding-bottom: 3.5vw;
     border-bottom: 2px solid $border-color;
 }

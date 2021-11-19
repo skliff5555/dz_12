@@ -65,31 +65,34 @@ a {
 }
 
 body {
+  /* выбрал основной шрифт для странички */
   font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
+  /* выбрал цвет для основных текстов */
   color: #8b8989;
 }
 
 h2, h3, h4 {
+  /* выбрал цвет для заголовков мелких */
   color: #3f3f3f;
 }
 
 h5 {
+  /* отдельный цвет для заголовка */
   color: #8b7d6b;
 }
 
 h2 {
+  /* размер и вид шрифта для заголовка */
   font-size: 1.95rem;
   font-weight: 600;
   letter-spacing: .045ex;
 }
 
 @media screen and (max-width: 599px) {
-  body {
-    background-color: rgba(153, 160, 95, 0.3);
-  }
+  /* тут и ниже адаптив, подгонял шрифты в основном и размер основного контейнера */
   .wrapper {
     width: 95%;
     margin: 0 0.4vw 0 1.8vw;
@@ -121,9 +124,6 @@ h2 {
 }
 
 @media (min-width: 600px) and (max-width: 904px) {
-  body {
-    background-color: rgba(95, 99, 160, 0.3);
-  }
   .wrapper {
     width: 90%;
     margin: 0 5.17vw 0 5.5vw;
@@ -146,9 +146,6 @@ h2 {
 }
 
 @media (min-width: 905px) and (max-width: 1239px) {
-  body {
-    background-color: rgba(95, 160, 111, 0.3);
-  }
   .wrapper {
     width: 85%;
     margin: 0 10.34vw 0 11.05vw;
@@ -164,11 +161,12 @@ h2 {
 @media (min-width: 1240px) {
   .wrapper {
     width: 78.6%;
-    margin: 0 10.34vw 0 11.05vw;
+    margin: 0 10vw 0 10.9vw;
   }
 }
 
 .head__menu-link {
+  /* расположил менюшку горизонтально */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,20 +176,23 @@ h2 {
 }
 
 .head__menu-item {
+  /* выбрал шрифт,сделал невидин=мый бордер, расположил относительно друг друга кнопки */
   padding: 1.4vw 1.48vw 1.4vw;
   border-radius: 0 0 0.26vw 0.26vw;
   font-size: 1.22rem;
 }
 
 a.head__link:active, a.head__link {
+  /* убрал атрибуты ссылок, сделал текст темным */
   text-decoration: none;
   color: #000;
 }
 
 .head__menu-item:first-child {
+  /* первой кнопке назначил отступы, тем самым выровняв весь ряд */
   padding: 1.4vw 2.67vw 1.4vw;
   margin-right: 1.47vw;
-  margin-left: 1.45vw;
+  margin-left: 1.42vw;
   font-size: 1.22rem;
 }
 
@@ -206,6 +207,7 @@ a.head__link:active, a.head__link {
 }
 
 .head {
+  /* основные блоки в шапке расположил вертикально по центру */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,6 +221,7 @@ a.head__link:active, a.head__link {
 }
 
 .head__logo {
+  /* спозиционировал весь блок с логотипом */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,25 +232,28 @@ a.head__link:active, a.head__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10.2vw;
-  margin-bottom: 8.17vw;
+  margin-top: 10.1vw;
+  margin-bottom: 8vw;
 }
 
 .head__logo-img {
+  /* сделал кругляк лого */
   width: 10.48vw;
   height: 10.48vw;
   border-radius: 50%;
 }
 
 .head__logo-title {
-  margin-top: 3.85vw;
+  /* сделал текст заголовка первого уровня, выставил его  */
+  margin-top: 3.75vw;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3.3rem;
+  font-size: 3.4rem;
   font-weight: 700;
 }
 
 .main__introduction {
+  /* спозиционировал текст в верхушке мейна, нарисовал снизу линию */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,6 +270,7 @@ a.head__link:active, a.head__link {
 }
 
 .center {
+  /* дополнительно ровнял текст для адаптива */
   text-align: center;
   font-size: 1.4rem;
   line-height: 2;
@@ -271,14 +278,13 @@ a.head__link:active, a.head__link {
 }
 
 .main__introduction-text {
+  /* выставил текст на место */
   margin-top: 2.5vw;
 }
 
-.present {
-  border-top: 2px solid #d2d2d2;
-}
-
 .main__present {
+  /* выставил галлерею всю, нарисовал линию */
+  border-top: 2px solid #d2d2d2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,6 +299,7 @@ a.head__link:active, a.head__link {
 }
 
 .main__present-text {
+  /* выставлят подписи над галлереей */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +309,8 @@ a.head__link:active, a.head__link {
 }
 
 .main__present-name {
-  padding: 1.4vw 53.1vw 4.9vw 0vw;
+  /* надпись наши работы - все размеры и шрифт выставил */
+  padding: 1.32vw 52.8vw 4.8vw 0vw;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.95rem;
   font-weight: 600;
@@ -310,18 +318,21 @@ a.head__link:active, a.head__link {
 }
 
 .main__present-item {
-  padding: 1.6vw .2vw 4.9vw 0;
+  /* так же надпись над галлереей - ее шрифт и позиция  */
+  padding: 1.5vw 0 4.9vw 0;
   font-size: 1.44rem;
-  letter-spacing: -.3px;
+  letter-spacing: -.2px;
 }
 
 .gallery {
+  /* размеры изображений и их взаиморасположение */
   width: 25.55vw;
-  padding-right: 1.55vw;
+  padding-right: 1.6vw;
   padding-bottom: 4.7vw;
 }
 
 .main__filling {
+  /* расположил блоки с текстами под галлереей вертикально */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,6 +346,7 @@ a.head__link:active, a.head__link {
 }
 
 .main__filling-button {
+  /* сделал книпки - их вид, расположение и шрифты надписи */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,7 +358,7 @@ a.head__link:active, a.head__link {
           align-items: center;
   width: 19.38vw;
   height: 4.45vw;
-  margin-bottom: 1.45vw;
+  margin-bottom: 1.32vw;
   border-radius: .4vw;
   border-color: #df6267;
   font-family: 'Times New Roman', Times, serif;
@@ -356,33 +368,44 @@ a.head__link:active, a.head__link {
   background-color: #df6267;
 }
 
+.margin {
+  /* класс для точного позиционирования первой кнопки */
+  margin-top: .18vw;
+}
+
 a.main__filling-link:active, a.main__filling-link {
+  /* убрал аттрибуты ссылок в кнопках, назначил цвет */
   text-decoration: none;
   color: #fff;
 }
 
 .main__filling-button:hover {
+  /* сделал кнопку чуть живее */
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   z-index: 2;
 }
 
 .main__top {
+  /* корректировал положение второй кнопки */
   margin-top: 4.6vw;
 }
 
 .main__filling-item {
+  /* размеры шрифта и позиция подзаголовка */
   font-size: 1.37rem;
-  margin-top: 3vw;
+  margin-top: 2.9vw;
 }
 
 .main__filling-text {
-  margin-top: 1.76vw;
+  /* спозиционировал блоки с текстом */
+  margin-top: 1.72vw;
   padding-bottom: 3.42vw;
   border-bottom: 3px solid #d2d2d2;
 }
 
 .main__filling-darker {
+  /* заголовок третьего блока - выставлял его и задавал параметры */
   padding-bottom: 1.29vw;
   font-size: 1.8rem;
   font-weight: 600;
@@ -391,11 +414,13 @@ a.main__filling-link:active, a.main__filling-link {
 }
 
 .bottom {
+  /* рисовал линию снизу мейна, и отодвигал ее от блока */
   padding-bottom: 3.5vw;
   border-bottom: 2px solid #d2d2d2;
 }
 
 .footer {
+  /* расположил блоки вертикально в подвале */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,6 +434,7 @@ a.main__filling-link:active, a.main__filling-link {
 }
 
 .footer__links {
+  /* ссылки подвала расположил горизонтально */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,15 +444,18 @@ a.main__filling-link:active, a.main__filling-link {
 }
 
 .footer__links-item {
+  /* выбрал для ссылок шрифт и место */
   padding: 4.71vw 2.8vw 4.1vw;
   font-size: 1.22rem;
 }
 
 .alignment {
+  /* первой ссылке задал отсту от края, чтобы выровнять весь ряд */
   padding-left: 5.3vw;
 }
 
 .footer__signature p {
+  /* задал копирайту все размеры и отодвинул от ссылок */
   font-size: 1.24rem;
   color: #000;
   padding-bottom: 4vw;

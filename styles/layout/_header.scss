@@ -1,22 +1,22 @@
-.head__menu-link {
+.head__menu-link { /* расположил менюшку горизонтально */
     @include row_center;
 }
 
-.head__menu-item {
+.head__menu-item {  /* выбрал шрифт,сделал невидин=мый бордер, расположил относительно друг друга кнопки */
     @include menu_padding;
     border-radius:0 0 0.26vw 0.26vw;
     font-size: 1.22rem;
 }
 
-a.head__link:active, a.head__link {
+a.head__link:active, a.head__link {  /* убрал атрибуты ссылок, сделал текст темным */
     text-decoration: none;
     color: $text-color-dark;
 }
 
-.head__menu-item:first-child {
+.head__menu-item:first-child {  /* первой кнопке назначил отступы, тем самым выровняв весь ряд */
     @include first_menu_padding;
     margin-right: 1.47vw;
-    margin-left: 1.45vw;
+    margin-left: 1.42vw;
     font-size: 1.22rem;
 }
 
@@ -28,26 +28,26 @@ a.head__link:active, a.head__link {
     color: $text-color-none;
 }
 
-.head {
+.head {  /* основные блоки в шапке расположил вертикально по центру */
     @include column_center;
 }
 
-.head__logo {
+.head__logo {  /* спозиционировал весь блок с логотипом */
     @include column_center;
-    margin-top: 10.2vw;
-    margin-bottom: 8.17vw;
+    margin-top: 10.1vw;
+    margin-bottom: 8vw;
 }
 
-.head__logo-img {
+.head__logo-img {  /* сделал кругляк лого */
     width: 10.48vw;
     height: 10.48vw;
     border-radius: 50%;
 }
 
-.head__logo-title {
-    margin-top: 3.85vw;
+.head__logo-title {  /* сделал текст заголовка первого уровня, выставил его  */
+    margin-top: 3.75vw;
     text-transform: uppercase;
     text-align: center;
-    font-size: 3.3rem;
+    font-size: 3.4rem;
     font-weight: 700;
 }
