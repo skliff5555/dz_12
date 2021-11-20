@@ -92,7 +92,7 @@ h2 {
 }
 
 @media screen and (max-width: 599px) {
-  /* тут и ниже адаптив, подгонял шрифты в основном и размер основного контейнера */
+  /* тут и ниже адаптивы, подгонял шрифты в основном и размер основного контейнера */
   .wrapper {
     width: 95%;
     margin: 0 auto;
@@ -122,11 +122,13 @@ h2 {
     font-size: 1.6rem;
   }
   .head__menu-link {
+    /* выравнивание меню-бутерброда */
     position: absolute;
     width: 70vw;
     margin-left: -35vw;
   }
   .head__menu li.head__menu-item, .head__menu li.head__menu-item:first-child {
+    /* задал вид и позицию для выпадающей части меню */
     width: 100%;
     text-align: center;
     border: 1px solid #d2d2d2;
@@ -135,10 +137,18 @@ h2 {
     margin-left: 0;
     padding-left: 0;
   }
+  .head__menu li.head__menu-item:hover, .head__menu li.head__menu-item:first-child:hover {
+    /* закрасил кнопку при наведении, сделал плавный переход цвета */
+    background-color: #3f3f3f;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
   .head__menu li:last-child {
+    /* новые формы последней кнопки меню */
     border-radius: 0 0 1vw 1vw;
   }
   .head__menu ul {
+    /* скрыл старое меню */
     display: none;
   }
   .head__menu nav::before,
@@ -148,17 +158,15 @@ h2 {
     top: 0;
     right: 0;
     display: block;
+    background-color: #fe6267;
+    border: 9px solid #fe6267;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAMAAAA8VkqRAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAE5JREFUeAFjwAkYcQC6SFAKBt4fo/6AaMMUQTUQIYJpFaqrMIICzkATR2Hi5uDUjmkh7tDAHUq4Qw8ujl+CsFEEHDVowg1n1OJKDLiTDwBLrgJ9vkuXOwAAAABJRU5ErkJggg==);
     cursor: pointer;
     height: 24px;
     width: 24px;
   }
-  .head__menu nav::before,
   .head__menu::after {
-    background-color: #fe6267;
-    border: 9px solid #fe6267;
-  }
-  .head__menu::after {
+    /* управление картинкой крестика\бутерброда, плюс проявление слоя кнопок меню */
     background-position: -24px -24px;
     z-index: 1;
   }
@@ -177,6 +185,7 @@ h2 {
     height: 20vw;
   }
   .main__present-gallery .gallery {
+    /* вытягивал галлерею */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -192,6 +201,7 @@ h2 {
     padding-bottom: 3vw;
   }
   .main__filling .main__filling-button {
+    /* ровнял размеры кнопок */
     width: 30vw;
     height: 9vw;
     margin-bottom: 3.5vw;
@@ -253,6 +263,9 @@ h2 {
 .head__menu-item {
   /* выбрал шрифт,сделал невидин=мый бордер, расположил относительно друг друга кнопки */
   padding: 1.4vw 1.48vw 1.4vw;
+  display: inline-block;
+  background: #fff;
+  opacity: 0.9;
   border-radius: 0 0 0.26vw 0.26vw;
   font-size: 1.22rem;
 }
@@ -274,6 +287,14 @@ a.head__link:active, a.head__link {
 .head__menu-item:hover {
   background-color: #3f3f3f;
   /* шапка меню меняет цвет фона при наведении курсора */
+}
+
+.head__menu-item:hover > a.head__link {
+  /* меняем цвет текста ссылки при наведении. Эта строка сгорит в аду за все мучения */
+  color: #fff;
+  opacity: 0.98;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .head {
@@ -320,41 +341,6 @@ a.head__link:active, a.head__link {
   text-align: center;
   font-size: 3.4rem;
   font-weight: 700;
-}
-
-.head__menu li {
-  display: inline-block;
-  padding: 1.4vw 1.48vw 1.4vw;
-  background: #fff;
-  opacity: 0.9;
-  font-size: 1.22rem;
-  border-radius: 0 0 0.26vw 0.26vw;
-}
-
-.head__menu li:first-child {
-  padding: 1.4vw 2.55vw 1.4vw 2.55vw;
-  margin-right: 1.47vw;
-  margin-left: 1.5vw;
-  font-size: 1.22rem;
-}
-
-.head__menu li:hover, .head__menu li.head__menu-item:first-child:hover {
-  background: #3f3f3f;
-  opacity: 0.98;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.head__menu li:hover > a, .head__menu li:first-child:hover > a {
-  color: #fff;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.head__menu li a {
-  display: block;
-  text-decoration: none;
-  color: #000;
 }
 
 .main__introduction {

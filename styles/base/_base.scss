@@ -20,7 +20,7 @@ h2 {  /* размер и вид шрифта для заголовка */
 }
 
 
-@media screen and (max-width: 599px) {  /* тут и ниже адаптив, подгонял шрифты в основном и размер основного контейнера */
+@media screen and (max-width: 599px) {  /* тут и ниже адаптивы, подгонял шрифты в основном и размер основного контейнера */
     // body {
     //     background-color: rgba(153, 160, 95, 0.3);
     // }
@@ -61,13 +61,13 @@ h2 {  /* размер и вид шрифта для заголовка */
         font-size: $text-size*1.6;
     }
 
-    .head__menu-link {
+    .head__menu-link {   /* выравнивание меню-бутерброда */
         position: absolute;
         width: 70vw;
         margin-left: -35vw;
     }
 
-    .head__menu li.head__menu-item,  .head__menu li.head__menu-item:first-child {
+    .head__menu li.head__menu-item,  .head__menu li.head__menu-item:first-child {   /* задал вид и позицию для выпадающей части меню */
         width: 100%;
         text-align: center;
         border: 1px solid $border-color;
@@ -76,35 +76,36 @@ h2 {  /* размер и вид шрифта для заголовка */
         margin-left: 0;
         padding-left: 0;
     }
+
+    .head__menu li.head__menu-item:hover,  .head__menu li.head__menu-item:first-child:hover { /* закрасил кнопку при наведении, сделал плавный переход цвета */
+        background-color: $text-color-light;
+        transition: .3s;
+    }
     
-    .head__menu li:last-child {
+    .head__menu li:last-child {   /* новые формы последней кнопки меню */
         border-radius:0 0 1vw 1vw;
     }
 
-    .head__menu ul {
+    .head__menu ul {   /* скрыл старое меню */
       display: none;
     }
 
-    .head__menu nav::before,
+    .head__menu nav::before,  /* кнопка управления выпадающим меню */
     .head__menu::after {
       content: '';
       position: absolute;
       top: 0;
       right: 0;
       display: block;
+      background-color: $accent-color;
+      border: 9px solid $accent-color;
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAMAAAA8VkqRAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAE5JREFUeAFjwAkYcQC6SFAKBt4fo/6AaMMUQTUQIYJpFaqrMIICzkATR2Hi5uDUjmkh7tDAHUq4Qw8ujl+CsFEEHDVowg1n1OJKDLiTDwBLrgJ9vkuXOwAAAABJRU5ErkJggg==);
       cursor: pointer;
       height: 24px;
       width: 24px;
     }
 
-    .head__menu nav::before,
-    .head__menu::after {
-      background-color: $accent-color;
-      border: 9px solid $accent-color;
-    }
-
-    .head__menu::after {
+    .head__menu::after {   /* управление картинкой крестика\бутерброда, плюс проявление слоя кнопок меню */
       background-position: -24px -24px;
       z-index: 1;
     }
@@ -118,24 +119,24 @@ h2 {  /* размер и вид шрифта для заголовка */
     }
 
     .head__menu nav:focus ul,
-    .head__menu ul:hover { 
+    .head__menu ul:hover {   
         display: block;
     }
 
-    img.head__logo-img {
+    img.head__logo-img { 
         width: 20vw;
         height: 20vw;
     }
 
-    .main__present-gallery .gallery {
+    .main__present-gallery .gallery {   /* вытягивал галлерею */
         @include column_center;
         width: 70vw;
         padding-right: 0;
         padding-bottom: 3vw;
     }
 
-    .main__filling .main__filling-button {
-        width: 30vw;
+    .main__filling .main__filling-button {   /* ровнял размеры кнопок */
+        width: 30vw; 
         height: 9vw;
         margin-bottom: 3.5vw;
     }

@@ -62,7 +62,7 @@
     @include New_roman;
     font-size: 1.4rem;
     font-weight: 600;
-    color: $text-color-none;
+    color: $color-none;
     background-color: $accent-color;
 }
 
@@ -72,7 +72,7 @@
 
 a.main__filling-link:active, a.main__filling-link {  /* убрал аттрибуты ссылок в кнопках, назначил цвет */
     text-decoration: none;
-    color: $text-color-none;
+    color: $color-none;
 }
 
 .main__filling-button:hover {  /* сделал кнопку чуть живее */
