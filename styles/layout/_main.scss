@@ -29,7 +29,7 @@
 }
 
 .main__present-name {  /* надпись наши работы - все размеры и шрифт выставил */
-    padding: 1.32vw 52.8vw 4.8vw 0vw;
+    padding: 1.28vw 52.8vw 4.8vw 0vw;
     @include New_roman;
     font-size: 1.95rem;
     font-weight: 600;
@@ -37,14 +37,14 @@
 }
 
 .main__present-item {  /* так же надпись над галлереей - ее шрифт и позиция  */
-    padding: 1.5vw 0 4.9vw 0;
+    padding-top: 1.46vw;
     font-size: 1.44rem;
     letter-spacing: -.2px;
 }
 
 .gallery {  /* размеры изображений и их взаиморасположение */
-    width: 25.55vw;
-    padding-right: 1.6vw;
+    width: 25.50vw;
+    padding-right: 1.59vw;
     padding-bottom: 4.7vw;
 }
 

@@ -95,7 +95,7 @@ h2 {
   /* тут и ниже адаптив, подгонял шрифты в основном и размер основного контейнера */
   .wrapper {
     width: 95%;
-    margin: 0 0.4vw 0 1.8vw;
+    margin: 0 auto;
   }
   .head__logo-title h1 {
     font-size: 2.2rem;
@@ -110,7 +110,7 @@ h2 {
     font-size: 0.8rem;
   }
   .main__filling-button .main__filling-link {
-    font-size: 0.75rem;
+    font-size: 1.3rem;
   }
   .main__introduction, .main__filling-item {
     text-align: center;
@@ -119,7 +119,82 @@ h2 {
     font-size: 0.95rem;
   }
   .head__menu-item a {
-    font-size: 1rem;
+    font-size: 1.6rem;
+  }
+  .head__menu-link {
+    position: absolute;
+    width: 70vw;
+    margin-left: -35vw;
+  }
+  .head__menu li.head__menu-item, .head__menu li.head__menu-item:first-child {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+    background-color: #eee;
+    padding-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .head__menu li:last-child {
+    border-radius: 0 0 1vw 1vw;
+  }
+  .head__menu ul {
+    display: none;
+  }
+  .head__menu nav::before,
+  .head__menu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAMAAAA8VkqRAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAE5JREFUeAFjwAkYcQC6SFAKBt4fo/6AaMMUQTUQIYJpFaqrMIICzkATR2Hi5uDUjmkh7tDAHUq4Qw8ujl+CsFEEHDVowg1n1OJKDLiTDwBLrgJ9vkuXOwAAAABJRU5ErkJggg==);
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+  }
+  .head__menu nav::before,
+  .head__menu::after {
+    background-color: #fe6267;
+    border: 9px solid #fe6267;
+  }
+  .head__menu::after {
+    background-position: -24px -24px;
+    z-index: 1;
+  }
+  .head__menu nav::before {
+    z-index: 2;
+  }
+  .head__menu nav:focus::before {
+    z-index: 0;
+  }
+  .head__menu nav:focus ul,
+  .head__menu ul:hover {
+    display: block;
+  }
+  img.head__logo-img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .main__present-gallery .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70vw;
+    padding-right: 0;
+    padding-bottom: 3vw;
+  }
+  .main__filling .main__filling-button {
+    width: 30vw;
+    height: 9vw;
+    margin-bottom: 3.5vw;
   }
 }
 
@@ -201,11 +276,6 @@ a.head__link:active, a.head__link {
   /* шапка меню меняет цвет фона при наведении курсора */
 }
 
-.head__menu-item:hover > a.head__link {
-  /* меняем цвет текста ссылки при наведении. Эта строка сгорит в аду за все мучения */
-  color: #fff;
-}
-
 .head {
   /* основные блоки в шапке расположил вертикально по центру */
   display: -webkit-box;
@@ -250,6 +320,41 @@ a.head__link:active, a.head__link {
   text-align: center;
   font-size: 3.4rem;
   font-weight: 700;
+}
+
+.head__menu li {
+  display: inline-block;
+  padding: 1.4vw 1.48vw 1.4vw;
+  background: #fff;
+  opacity: 0.9;
+  font-size: 1.22rem;
+  border-radius: 0 0 0.26vw 0.26vw;
+}
+
+.head__menu li:first-child {
+  padding: 1.4vw 2.55vw 1.4vw 2.55vw;
+  margin-right: 1.47vw;
+  margin-left: 1.5vw;
+  font-size: 1.22rem;
+}
+
+.head__menu li:hover, .head__menu li.head__menu-item:first-child:hover {
+  background: #3f3f3f;
+  opacity: 0.98;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.head__menu li:hover > a, .head__menu li:first-child:hover > a {
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.head__menu li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
 }
 
 .main__introduction {
@@ -310,7 +415,7 @@ a.head__link:active, a.head__link {
 
 .main__present-name {
   /* надпись наши работы - все размеры и шрифт выставил */
-  padding: 1.32vw 52.8vw 4.8vw 0vw;
+  padding: 1.28vw 52.8vw 4.8vw 0vw;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.95rem;
   font-weight: 600;
@@ -319,15 +424,15 @@ a.head__link:active, a.head__link {
 
 .main__present-item {
   /* так же надпись над галлереей - ее шрифт и позиция  */
-  padding: 1.5vw 0 4.9vw 0;
+  padding-top: 1.46vw;
   font-size: 1.44rem;
   letter-spacing: -.2px;
 }
 
 .gallery {
   /* размеры изображений и их взаиморасположение */
-  width: 25.55vw;
-  padding-right: 1.6vw;
+  width: 25.50vw;
+  padding-right: 1.59vw;
   padding-bottom: 4.7vw;
 }
 
@@ -360,12 +465,12 @@ a.head__link:active, a.head__link {
   height: 4.45vw;
   margin-bottom: 1.32vw;
   border-radius: .4vw;
-  border-color: #df6267;
+  border-color: #fe6267;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.4rem;
   font-weight: 600;
   color: #fff;
-  background-color: #df6267;
+  background-color: #fe6267;
 }
 
 .margin {
